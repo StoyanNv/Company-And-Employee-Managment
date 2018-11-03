@@ -1,0 +1,13 @@
+﻿@model EmployeeDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Model.Name</h2>
+
+<p>Salary: @Model.Salary</p>
+<p>Start Date: @Model.StartDate</p>
+<p>Vacantion Days: @Model.VacationDays</p>
+<p>Experience Level: @Model.ExperienceLevel</p>
+<a class="btn btn-warning" asp-controller="Employee" asp-action="Edit" asp-route-employeeId="@Model.Id">Edit</a>
+<a class="btn badge-danger" data-toggle="confirmation" asp-controller="Employee" asp-action="Delete" asp-route-employeeId="@Model.Id">Delete</a>

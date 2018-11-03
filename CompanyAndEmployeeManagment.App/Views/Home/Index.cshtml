@@ -1,0 +1,17 @@
+﻿@model IEnumerable<IndexCompanyViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Action</td>
+    </tr>
+    </thead>
+    <tbody>
+    @Html.DisplayForModel()
+    </tbody>
+</table>

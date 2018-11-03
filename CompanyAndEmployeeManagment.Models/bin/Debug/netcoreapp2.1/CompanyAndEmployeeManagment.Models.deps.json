@@ -1,0 +1,66 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "CompanyAndEmployeeManagment.Models/1.0.0": {
+        "dependencies": {
+          "CompanyAndEmployeeManagment.Common": "1.0.0"
+        },
+        "runtime": {
+          "CompanyAndEmployeeManagment.Models.dll": {}
+        }
+      },
+      "CompanyAndEmployeeManagment.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.1.1.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.1.1.0"
+        },
+        "runtime": {
+          "CompanyAndEmployeeManagment.Common.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.ViewFeatures.Reference/2.1.1.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Mvc.ViewFeatures.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Core.Reference/2.1.1.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Mvc.Core.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CompanyAndEmployeeManagment.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyAndEmployeeManagment.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.ViewFeatures.Reference/2.1.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Mvc.Core.Reference/2.1.1.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+﻿@model AddAndEditEmployeeBindingModel
+@Html.FormGroupFor(model => model.Name)
+@Html.FormGroupFor(model => model.Salary)
+@Html.HiddenFor(m => m.CompanyId)
+@Html.HiddenFor(m => m.Id)
+<div class="form-group">
+    <label asp-for="ExperienceLevelId" class="control-label col-sm-2"></label>
+    <div class="col-sm-10">
+        @Html.DropDownList("ExperienceLevelId", Model.ExperienceLevels, null, new { @class = "form-control" })
+        <span class="text-danger" asp-validation-for="ExperienceLevelId"></span>
+    </div>
+</div>
+@Html.FormGroupFor(model => model.StartDate)
+@Html.FormGroupFor(model => model.VacationDays)

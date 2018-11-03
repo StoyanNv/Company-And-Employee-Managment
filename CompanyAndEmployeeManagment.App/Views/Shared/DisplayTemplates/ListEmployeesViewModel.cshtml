@@ -1,0 +1,7 @@
+﻿@model ListEmployeesViewModel
+
+<li>
+    <a class="list-group-item" href="@($"/Employee/Details/{Model.Id}")">
+        @Html.Raw(Model.Name)
+    </a>
+</li>

@@ -1,0 +1,11 @@
+﻿@model IndexCompanyViewModel  
+
+<tr>
+    <td>@Model.Id</td>
+    <td>@Model.Name</td>
+    <td>
+        <a class="btn btn-info" asp-controller="Company" asp-action="Details" asp-route-companyId="@Model.Id">Details</a>
+        <a class="btn btn-warning" asp-controller="Company" asp-action="Edit" asp-route-companyId="@Model.Id">Edit</a>
+        <a class="btn btn-danger" data-toggle="confirmation" asp-controller="Company" asp-action="Delete" asp-route-companyId="@Model.Id">Delete</a>
+    </td>
+</tr>   

@@ -1,0 +1,11 @@
+﻿@model CompanyDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@Model.Name</h2>
+<p>@Model.Description</p>
+<ul class="list-group">
+    @Html.DisplayFor(model => model.Employees)
+</ul>
+<a class="btn btn-success" asp-controller="Employee" asp-action="Add" asp-route-companyId="@Model.Id">Add Employee</a>
