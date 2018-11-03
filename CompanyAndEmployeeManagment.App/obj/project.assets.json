@@ -12497,11 +12497,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.App\\CompanyAndEmployeeManagment.App.csproj",
+      "projectUniqueName": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.App\\CompanyAndEmployeeManagment.App.csproj",
       "projectName": "CompanyAndEmployeeManagment.App",
-      "projectPath": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.App\\CompanyAndEmployeeManagment.App.csproj",
+      "projectPath": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.App\\CompanyAndEmployeeManagment.App.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.App\\obj\\",
+      "outputPath": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12520,11 +12520,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj"
+            "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj": {
+              "projectPath": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Services\\CompanyAndEmployeeManagment.Services.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Services\\CompanyAndEmployeeManagment.Services.csproj"
+            "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Services\\CompanyAndEmployeeManagment.Services.csproj": {
+              "projectPath": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Services\\CompanyAndEmployeeManagment.Services.csproj"
             }
           }
         }

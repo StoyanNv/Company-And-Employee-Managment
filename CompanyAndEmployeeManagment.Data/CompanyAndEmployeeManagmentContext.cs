@@ -8,6 +8,7 @@
         private DbContextOptions<CompanyAndEmployeeManagmentContext> options;
 
         public CompanyAndEmployeeManagmentContext(DbContextOptions<CompanyAndEmployeeManagmentContext> dbContextOptions)
+            :base(dbContextOptions)
         {
         }
 
@@ -16,16 +17,6 @@
         public DbSet<Employee> Employees { get; set; }
 
         public DbSet<Level> Levels { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer(SqlServerConstants.ConnectionString);
-            }
-
-            base.OnConfiguring(optionsBuilder);
-        }
-
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Level>()

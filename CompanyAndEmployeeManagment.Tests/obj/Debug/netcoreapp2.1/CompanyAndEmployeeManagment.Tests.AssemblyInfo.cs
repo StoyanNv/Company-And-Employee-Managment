@@ -12,17 +12,13 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("CompanyAndEmployeeManagment.Common, Version=1.0.0.0, Culture=neutral, PublicKeyTo" +
-    "ken=null", "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagmen" +
-    "t.Common", "CompanyAndEmployeeManagment.Common.csproj", "0")]
+    "ken=null", "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Common", "CompanyAndEmployeeManagment.Common.csproj", "0")]
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("CompanyAndEmployeeManagment.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToke" +
-    "n=null", "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagmen" +
-    "t.Data", "CompanyAndEmployeeManagment.Data.csproj", "0")]
+    "n=null", "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Data", "CompanyAndEmployeeManagment.Data.csproj", "0")]
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("CompanyAndEmployeeManagment.Models, Version=1.0.0.0, Culture=neutral, PublicKeyTo" +
-    "ken=null", "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagmen" +
-    "t.Models", "CompanyAndEmployeeManagment.Models.csproj", "0")]
+    "ken=null", "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Models", "CompanyAndEmployeeManagment.Models.csproj", "0")]
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("CompanyAndEmployeeManagment.Services, Version=1.0.0.0, Culture=neutral, PublicKey" +
-    "Token=null", "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagmen" +
-    "t.Services", "CompanyAndEmployeeManagment.Services.csproj", "0")]
+    "Token=null", "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Services", "CompanyAndEmployeeManagment.Services.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CompanyAndEmployeeManagment.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

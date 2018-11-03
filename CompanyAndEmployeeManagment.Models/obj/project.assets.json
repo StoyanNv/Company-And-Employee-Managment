@@ -702,11 +702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Models\\CompanyAndEmployeeManagment.Models.csproj",
+      "projectUniqueName": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Models\\CompanyAndEmployeeManagment.Models.csproj",
       "projectName": "CompanyAndEmployeeManagment.Models",
-      "projectPath": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Models\\CompanyAndEmployeeManagment.Models.csproj",
+      "projectPath": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Models\\CompanyAndEmployeeManagment.Models.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Models\\obj\\",
+      "outputPath": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -725,8 +725,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\CompanyAndEmployeeManagment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj"
+            "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj": {
+              "projectPath": "C:\\Company-And-Employee-Managment\\CompanyAndEmployeeManagment.Common\\CompanyAndEmployeeManagment.Common.csproj"
             }
           }
         }

@@ -26,14 +26,12 @@
         public async Task CompanyService_AddCompany()
         {
             AddAndEditCompanyBindingModel model = new AddAndEditCompanyBindingModel() { Name = "STP", Description = "Some description" };
-            dbContext.SaveChanges();
 
             AutoMapper.Mapper.Initialize(config => config.AddProfile<AutoMapperProfile>());
 
             var service = new CompanyService(dbContext, AutoMapper.Mapper.Instance);
 
             await service.AddCompanyAsync(model);
-
             Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Name == "STP"));
             Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Description == "Some description"));
         }
@@ -54,21 +52,39 @@
             Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Name == "New name"));
             Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Description == "Some other description"));
         }
-        //[TestMethod]
-        //public async Task CompanyService_DeleteCompany()
-        //{
-        //    AddAndEditCompanyBindingModel model = new AddAndEditCompanyBindingModel() { Name = "STPDelete", Description = "Some description" };
-        //    dbContext.SaveChanges();
+        [TestMethod]
+        public async Task CompanyService_DeleteCompany()
+        {
+            AddAndEditCompanyBindingModel model = new AddAndEditCompanyBindingModel() { Id = 1, Name = "STPDelete", Description = "Some description" };
+            dbContext.SaveChanges();
 
-        //    var service = new CompanyService(dbContext, AutoMapper.Mapper.Instance);
+            var service = new CompanyService(dbContext, AutoMapper.Mapper.Instance);
 
-        //    await service.AddCompanyAsync(model);
-        //    Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Name == "STPDelete"));
-        //    Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Description == "Some description"));
-        //    var id = dbContext.Companies.FirstOrDefaultAsync(x => x.Name == "STPDelete").Id;
-        //    await service.DeleteCompanyAsync(id);
-        //    Assert.IsNull(dbContext.Companies.FirstOrDefault(c => c.Name == "STPDelete"));
-        //    Assert.IsNull(dbContext.Companies.FirstOrDefault(c => c.Description == "Some other description"));
-        //}
+            await service.AddCompanyAsync(model);
+
+            Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Name == "STPDelete"));
+            Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Description == "Some description"));
+
+            await service.DeleteCompanyAsync(1);
+            Assert.IsNull(dbContext.Companies.FirstOrDefault(c => c.Name == "STPDelete"));
+            Assert.IsNull(dbContext.Companies.FirstOrDefault(c => c.Description == "Some other description"));
+        }
+        [TestMethod]
+        public async Task CompanyService_CompanyDetails()
+        {
+            AddAndEditCompanyBindingModel model = new AddAndEditCompanyBindingModel() { Id = 1, Name = "STPDelete", Description = "Some description" };
+            dbContext.SaveChanges();
+
+            var service = new CompanyService(dbContext, AutoMapper.Mapper.Instance);
+
+            await service.AddCompanyAsync(model);
+
+            Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Name == "STPDelete"));
+            Assert.IsNotNull(dbContext.Companies.FirstOrDefault(c => c.Description == "Some description"));
+
+            var companyDetailsModel = await service.CompanyDetailsAsync(1);
+            Assert.AreEqual(companyDetailsModel.Name, dbContext.Companies.Find(1).Name);
+            Assert.AreEqual(companyDetailsModel.Description, dbContext.Companies.Find(1).Description);
+        }
     }
 }
